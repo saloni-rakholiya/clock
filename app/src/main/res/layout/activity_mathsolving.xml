@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativel"
+    android:background="@drawable/gradient_list"
+    tools:context=".mathsolving">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/textView13"
+        android:text="num1" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#234743"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/textView13"
+        android:layout_height="wrap_content"
+        android:text="num2" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView13"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:padding="10dp"
+        android:hint="ANSWER HERE"
+        android:textColorHint="#B8114A"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#FFFF"
+        android:background="#FBD2E0"
+        android:gravity="center"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:padding="10dp"
+        android:width="200dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/buttonbg"
+        android:text="Submit" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/mujic"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_music_note_black_24dp"
+        />
+
+</RelativeLayout>

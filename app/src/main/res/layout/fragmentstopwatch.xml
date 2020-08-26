@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativel"
+    android:background="#000000"
+    >
+
+   <Chronometer
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:textSize="30dp"
+       android:layout_marginTop="160dp"
+       android:id="@+id/chrono1"
+       android:gravity="right"
+       android:textColor="#FFFF"
+       android:textStyle="bold"
+       android:layout_centerHorizontal="true"
+       />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/lineer"
+        android:background="@color/colorAccent"
+        android:layout_below="@id/chrono1">
+<ScrollView
+    android:layout_width="match_parent"
+    android:id="@+id/scrolling"
+    android:layout_height="match_parent">
+     <TextView
+         android:id="@+id/textView12"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:textSize="24dp"
+         android:textColor="#670627"
+         android:text="" />
+</ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView11"
+
+        android:layout_toLeftOf="@id/button4"
+        android:background="@drawable/buttonbg"
+        android:layout_height="wrap_content"
+        android:text="START" />
+
+    <Button
+        android:id="@+id/button4"
+
+        android:layout_below="@id/textView11"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:background="@drawable/buttonbg"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/textView11"
+        android:text="PAUSE" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_below="@id/textView11"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:background="@drawable/buttonbg"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView11"
+        android:text="RESET" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/button5"
+        android:layout_below="@id/textView11"
+        android:background="@drawable/buttonbg"
+        android:text="Lap" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+android:layout_below="@id/lineer"
+        android:layout_height="wrap_content"
+        android:text="" />
+</RelativeLayout>
