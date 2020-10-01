@@ -103,11 +103,7 @@ public class alarm extends Fragment /*implements TimePickerDialog.OnTimeSetListe
         });
 
 
-        //a=new ArrayList<>();
 
-
-
-//here
         pickerDate = (DatePicker)  v.findViewById(R.id.pickerdate);
         pickerTime = (TimePicker) v.findViewById(R.id.pickertime);
         Calendar now = Calendar.getInstance();
@@ -120,7 +116,6 @@ public class alarm extends Fragment /*implements TimePickerDialog.OnTimeSetListe
 
 
 
-        //here
 
 
 
@@ -129,25 +124,7 @@ public class alarm extends Fragment /*implements TimePickerDialog.OnTimeSetListe
             public void onClick(View v) {
 
                 showdatetimedialog();
-               /* Calendar current = Calendar.getInstance();
 
-                Calendar cal = Calendar.getInstance();
-                cal.set(pickerDate.getYear(), pickerDate.getMonth(),
-                        pickerDate.getDayOfMonth(),
-                        pickerTime.getCurrentHour(),
-                        pickerTime.getCurrentMinute(), 00);
-
-
-                if (cal.compareTo(current) <= 0) {
-                    // The set Date/Time already passed
-                    Toast.makeText(getActivity(),
-                            "Invalid Date/Time", Toast.LENGTH_LONG).show();
-                } else {
-                    Toast.makeText(getActivity(),
-                            "" + cal.getTime(), Toast.LENGTH_LONG).show();
-                    setAlarm(cal);
-                }
-*/
 
             }
 
@@ -249,21 +226,6 @@ return v;
     }
 
 
-    /*  @Override
-      public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-          Calendar c=Calendar.getInstance();
-          c.set(Calendar.HOUR_OF_DAY,hourOfDay);
-          c.set(Calendar.MINUTE,minute);
-          c.set(Calendar.SECOND,0);
-
-          Toast.makeText(getActivity(),"POP",3000).show();
-          updatetime(c);
-          startalarm(c);
-          // multiplealarm(c);
-          *//*TextView tv=findViewById(R.id.textView);
-        tv.setText("Hour:"+hourOfDay+" Minute"+minute);*//*
-    }
-*/
     int j=0;
 
     private void cancelalarmm() {
